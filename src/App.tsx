@@ -2,6 +2,7 @@ import { Header } from "./components/Header";
 import React from "react";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
+import { Skills } from "./components/Skills";
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
     <div className={darkToggle ? 'dark' : 'light'} >
       <Header />
       <Home />
-      <About/>
+      <About />
+      <Skills />
     </div>
   )
 }
