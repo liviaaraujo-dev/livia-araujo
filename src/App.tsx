@@ -1,21 +1,13 @@
 import { Header } from "./components/Header";
+import React from "react";
 
 function App() {
 
-  return (
-    <div className="bg-white">
-      <Header />
-      <div className="h-[100vh] mt-40">
+  const [darkToggle, setDarkToggle] = React.useState(false)
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo reprehenderit similique modi quasi facere culpa praesentium sint ipsum consectetur sequi laudantium illum odit saepe at maxime, iste hic natus!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo reprehenderit similique modi quasi facere culpa praesentium sint ipsum consectetur sequi laudantium illum odit saepe at maxime, iste hic natus!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo reprehenderit similique modi quasi facere culpa praesentium sint ipsum consectetur sequi laudantium illum odit saepe at maxime, iste hic natus!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo reprehenderit similique modi quasi facere culpa praesentium sint ipsum consectetur sequi laudantium illum odit saepe at maxime, iste hic natus!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo reprehenderit similique modi quasi facere culpa praesentium sint ipsum consectetur sequi laudantium illum odit saepe at maxime, iste hic natus!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo reprehenderit similique modi quasi facere culpa praesentium sint ipsum consectetur sequi laudantium illum odit saepe at maxime, iste hic natus!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo reprehenderit similique modi quasi facere culpa praesentium sint ipsum consectetur sequi laudantium illum odit saepe at maxime, iste hic natus!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo reprehenderit similique modi quasi facere culpa praesentium sint ipsum consectetur sequi laudantium illum odit saepe at maxime, iste hic natus!</p>
-      </div>
+  return (
+    <div className={darkToggle ? 'dark' : 'light'} >
+      <Header />
     </div>
   )
 }

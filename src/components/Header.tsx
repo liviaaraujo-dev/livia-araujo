@@ -3,6 +3,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
+
 export function Header() {
   const pdfFile = "/caminho-para-o-seu-arquivo.pdf";
 
@@ -12,8 +13,8 @@ export function Header() {
     <header
       className={
         openMenu
-          ? "flex flex-col items-center text-base font-sans fixed top-0 left-0 right-0 z-50 bg-white w-[100%] lg:flex-row lg:justify-between h-[100vh]"
-          : "flex flex-col items-center text-base font-sans fixed top-0 left-0 right-0 z-50 bg-white w-[100%] lg:flex-row lg:justify-between lg:px-10"
+          ? "flex flex-col items-center text-base font-sans fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black w-[100%] bg-light-primary  lg:flex-row lg:justify-between h-[100vh]"
+          : "flex flex-col items-center text-base font-sans fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black w-[100%] lg:flex-row lg:justify-between lg:px-10"
       }
     >
       <>
@@ -25,8 +26,9 @@ export function Header() {
             }
           >
             <CloseIcon
-              style={{ fontSize: 40 }}
+              style={{ fontSize: 40}}
               onClick={() => setOpenMenu(false)}
+              className="text-black dark:text-white"
             />{" "}
           </button>
           <button
@@ -35,7 +37,7 @@ export function Header() {
             }
             onClick={() => setOpenMenu(true)}
           >
-            <MenuIcon style={{ fontSize: 40 }} />
+            <MenuIcon style={{ fontSize: 40 }}  className="text-black dark:text-white"/>
           </button>
         </div>
 
@@ -49,7 +51,7 @@ export function Header() {
           }
         >
           <nav className={openMenu ? "w-4/5 sm:w-[88%]" : "hidden lg:flex"}>
-            <ul className="flex flex-col gap-4 mt-12 items-start font-medium text-xl lg:flex-row lg:mt-4">
+            <ul className="flex flex-col gap-4 mt-12 items-start font-medium text-xl text-[#4B5563] dark:text-[#D1D5DB] lg:flex-row lg:mt-4">
               <li>
                 <a href="" className="text-[#BA00EF]">
                   About
@@ -76,14 +78,14 @@ export function Header() {
           >
             <hr className="border-5-[#4B5563] w-[100%] mt-8 lg:hidden lg:mt-0" />
             <button className="flex mt-6 w-4/5 justify-between text-xl sm:w-[88%] lg:w-[20%] lg:mt-2">
-              <p className="lg:hidden">Switch Theme</p>
-              <Brightness4Icon style={{ fontSize: 35 }} />
+              <p className="text-[#4B5563] dark:text-[#D1D5DB] lg:hidden">Switch Theme</p>
+              <Brightness4Icon style={{ fontSize: 35 }}  className="text-black dark:text-white" />
             </button>
 
             <a
               href={pdfFile}
               download="nome-do-arquivo.pdf"
-              className="bg-[#BA00EF] rounded-md py-2 w-4/5 flex items-center justify-center mt-8 font-medium text-xl sm:w-[88%] lg:w-[10rem] lg:mt-1 lg:h-10 lg:ml-4"
+              className="bg-[#BA00EF] rounded-md py-2 w-4/5 flex items-center justify-center dark:text-white mt-8 font-medium text-xl sm:w-[88%] lg:w-[10rem] lg:mt-1 lg:h-10 lg:ml-4"
             >
               Dowland CV
             </a>
