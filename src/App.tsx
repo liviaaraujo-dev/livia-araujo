@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 function App() {
 
-  const [darkToggle, setDarkToggle] = React.useState(false)
+  const [darkToggle, setDarkToggle] = React.useState(true)
 
   return (
     <div className={darkToggle ? 'dark' : 'light'} >
