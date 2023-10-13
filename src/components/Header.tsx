@@ -18,15 +18,15 @@ export function Header() {
       }
     >
       <>
-        <div className="flex justify-between items-center w-[90%] pb-4 lg:w-[20%]">
-          <img src={logo} alt="" className="h-20 lg:mt-2" />
+        <div className="flex justify-between items-center mt-2 w-[90%] pb-4 lg:w-[20%]">
+          <img src={logo} alt="" className="h-14 lg:mt-4" />
           <button
             className={
               openMenu ? "text-8xl flex mt-4 lg:hidden" : "hidden lg:hidden"
             }
           >
             <CloseIcon
-              style={{ fontSize: 40}}
+              style={{ fontSize: 30}}
               onClick={() => setOpenMenu(false)}
               className="text-black dark:text-white"
             />{" "}
@@ -37,7 +37,7 @@ export function Header() {
             }
             onClick={() => setOpenMenu(true)}
           >
-            <MenuIcon style={{ fontSize: 40 }}  className="text-black dark:text-white"/>
+            <MenuIcon style={{ fontSize: 30 }}  className="text-black dark:text-white"/>
           </button>
         </div>
 
