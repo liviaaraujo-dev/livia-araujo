@@ -1,5 +1,5 @@
 import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
-import foto1 from '../assets/foto1.png';
+import foto1 from '../assets/imgs/foto1.png';
 import { Typewriter } from 'react-simple-typewriter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

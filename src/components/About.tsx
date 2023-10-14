@@ -1,4 +1,4 @@
-import foto2 from "../assets/foto12.jpeg";
+import foto2 from "../assets/imgs/foto12.jpeg";
 
 
 export function About() {

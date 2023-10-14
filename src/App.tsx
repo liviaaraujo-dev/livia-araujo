@@ -9,7 +9,7 @@ import Projects from "./components/Projects";
 
 function App() {
 
-  const [darkToggle] = React.useState(true)
+  const [darkToggle] = React.useState(false)
 
   return (
     <div className={darkToggle ? 'dark' : 'light'} >

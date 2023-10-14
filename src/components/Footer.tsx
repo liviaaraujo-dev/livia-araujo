@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/imgs/logo.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";

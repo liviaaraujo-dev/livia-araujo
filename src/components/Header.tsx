@@ -1,4 +1,4 @@
-import logo from "../assets/logo2.png";
+import logo from "../assets/imgs/logo2.png";
 import CloseIcon from "@mui/icons-material/Close";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import MenuIcon from "@mui/icons-material/Menu";

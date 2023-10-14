@@ -1,9 +1,9 @@
 import { useState } from "react";
-import img from "../assets/projects/indecor.png";
-import listaR from "../assets/projects/lista-tarefas-react.png";
-import flix from "../assets/projects/flix.png";
-import devfinance from "../assets/projects/devfinance.png";
-import cssZen from "../assets/projects/css-zen-garden.png";
+import img from "../assets/imgs/projects/indecor.png";
+import listaR from "../assets/imgs/projects/lista-tarefas-react.png";
+import flix from "../assets/imgs/projects/flix.png";
+import devfinance from "../assets/imgs/projects/devfinance.png";
+import cssZen from "../assets/imgs/projects/css-zen-garden.png";
 
 interface WebApp {
   image: string;
