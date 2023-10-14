@@ -5,7 +5,21 @@ import flix from "../assets/projects/flix.png";
 import devfinance from "../assets/projects/devfinance.png";
 import cssZen from "../assets/projects/css-zen-garden.png";
 
-var webApps = [
+interface WebApp {
+  image: string;
+  title: string;
+  github: string;
+  view: string;
+}
+
+interface MobileApp {
+  image: string;
+  title: string;
+  github: string;
+  view: string;
+}
+
+var webApps : WebApp[]  = [
   {
     image: img,
     title: "WebSite IndeCor",
@@ -38,7 +52,7 @@ var webApps = [
   },
 ];
 
-var mobileApps = [
+var mobileApps : MobileApp[] = [
   {
     image: img,
     title: "WebSite IndeCor",
@@ -94,7 +108,7 @@ export default function Projects() {
 
       {webSelect == true ? (
         <div className="flex flex-col gap-12 mt-6 xl:flex-row xl:flex-wrap">
-          {webApps.map((project, index) => (
+          {webApps.map((project) => (
             <div className="w-[90%] sm:w-[20%] py-4 bg-[#27033d] flex flex-col rounded-xl px-4">
               <img
                 src={project.image}
@@ -128,7 +142,7 @@ export default function Projects() {
         </div>
       ) : (
         <div className="flex flex-col gap-12 mt-6 xl:flex-row xl:flex-wrap">
-          {mobileApps.map((project, index) => (
+          {mobileApps.map((project) => (
             <div className="w-[90%] sm:w-[20%] py-4 bg-[#27033d] flex flex-col rounded-xl px-4">
               <img
                 src={project.image}
