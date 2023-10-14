@@ -3,7 +3,7 @@ import react from "../assets/icon-react.png";
 import postgres from "../assets/icon-postgresql.png";
 export function Skills() {
   return (
-    <section className="flex flex-col items-center mb-36 bg-white pb-36 dark:bg-black text-[#4B5563] dark:text-[#D1D5DB] ">
+    <section className="flex flex-col items-center pb-48 bg-white dark:bg-black text-[#4B5563] dark:text-[#D1D5DB] ">
       <h2 className="text-3xl text-center lg:text-5xl font-bold text-black dark:text-white lg:text-start mt-8">
         Skills
       </h2>

@@ -6,7 +6,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 export default function Footer() {
   return (
     <footer className="pb-10 bg-[#E5E7EB] dark:bg-[#030712] text-[#4B5563] dark:text-[#D1D5DB]">
-      <div className="flex flex-col md:flex-row md:justify-between md:px-28 md:mt-32">
+      <div className="flex flex-col md:flex-row md:justify-between md:px-28 md:pt-0">
         <div className="flex items-start cursor-pointer flex-col my-12 ml-4 md:m-0 md:mt-6 lg:ml-0">
           <img src={logo} width={180} alt="" />
         </div>
