@@ -2,7 +2,7 @@ import { Header } from "./components/Header";
 import React from "react";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
-import { Skills } from "./components/Skills";
+import { Technologies } from "./components/Technologies";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Home />
       <About />
-      <Skills />
+      <Technologies />
       <Projects />
       <Contact />
       <Footer/>

@@ -20,7 +20,7 @@ import linux from "../assets/imgs/skills/linux.png";
 import prisma from "../assets/imgs/skills/prisma.png";
 import php from "../assets/imgs/skills/php.png";
 
-export function Skills() {
+export function Technologies() {
   var skills = [
     {
       name: "JavaScript",
@@ -43,6 +43,14 @@ export function Skills() {
       image: react,
     },
     {
+      name: "Flutter",
+      image: flutter,
+    },
+    {
+      name: "Dart",
+      image: dart,
+    },
+    {
       name: "Tailwind CSS",
       image: tailwind,
     },
@@ -61,14 +69,6 @@ export function Skills() {
     {
       name: "Prisma ORM",
       image: prisma,
-    },
-    {
-      name: "Flutter",
-      image: flutter,
-    },
-    {
-      name: "Dart",
-      image: dart,
     },
     {
       name: "Firebase",
@@ -112,12 +112,12 @@ export function Skills() {
   return (
     <section id="skills" className="flex flex-col items-center pb-48 bg-white dark:bg-black text-[#4B5563] dark:text-[#D1D5DB] ">
       <h2 className="text-3xl text-center lg:text-5xl font-bold text-black dark:text-white lg:text-start mt-8">
-        Skills
+        Tecnologias
       </h2>
-      <p className="w-4/5 text-center lg:mt-4">
+      <p className="mt-2 mb-6 w-4/5 md:mx-0 text-center lg:mt-4">
         As habilidades, ferramentas e tecnologias em que sou muito bom:
       </p>
-      <div className="grid grid-cols-3 w-4/5 gap-4 mt-4 lg:grid-cols-7 lg:mt-12 lg:w-[65%] lg:gap-8">
+      <div className="grid grid-cols-3 w-4/5 gap-4 mt-4 lg:-w[90%] lg:grid-cols-7 lg:mt-12 xl:w-[65%] lg:gap-8">
         {skills.map((skill) => {
           return (
             <div className="flex flex-col items-center justify-center gap-4">
