@@ -10,6 +10,7 @@ interface WebApp {
   title: string;
   github: string;
   view: string;
+  description: string;
 }
 
 interface MobileApp {
@@ -19,40 +20,48 @@ interface MobileApp {
   view: string;
 }
 
-var webApps : WebApp[]  = [
+const webApps : WebApp[]  = [
   {
     image: img,
     title: "WebSite IndeCor",
     github: "https://github.com/liviaaraujo-dev/InDecor",
-    view: "https://liviaaraujo-dev.github.io/InDecor/",
+    view: "https://liviaaraujo-dev.github.io/InDecor/", 
+    description: "Uma landing page do evento InDecor, focado em design de interiores. Techs: html, css e javascript"
   },
   {
     image: listaR,
     title: "Todo List React",
     github: "https://github.com/liviaaraujo-dev/todo-list",
     view: "https://todo-list-liviaaraujo.netlify.app/",
+    description: "Uma lista de tarefas. Techs: TypeScript, React JS, Styled Components, Firebase/Realtime Database"
+
   },
   {
     image: flix,
     title: "Flix React Js",
     github: "https://github.com/liviaaraujo-dev/flix",
     view: "https://flix-liviaaraujo.netlify.app/",
+    description: "Uma landing page do evento InDecor, focado em design de interiores."
+
   },
   {
     image: devfinance,
     title: "Dev Finance - Controle financeiro",
     github: "https://github.com/liviaaraujo-dev/InDecor",
     view: "https://liviaaraujo-dev.github.io/InDecor/",
+    description: "Uma landing page do evento InDecor, focado em design de interiores."
+
   },
   {
     image: cssZen,
     title: "Css Zen Garden - Tema Stranger Things",
     github: "https://github.com/liviaaraujo-dev/css-zen-garden/",
     view: "https://liviaaraujo-dev.github.io/css-zen-garden/",
+    description: "Uma landing page do evento InDecor, focado em design de interiores."
   },
 ];
 
-var mobileApps : MobileApp[] = [
+const mobileApps : MobileApp[] = [
   {
     image: img,
     title: "WebSite IndeCor",
@@ -72,7 +81,7 @@ export default function Projects() {
   const [mobileSelect, setMobileSelect] = useState(false);
 
   return (
-    <section className="pl-8 pt-24 xl:pl-24 bg-white dark:bg-black text-[#4B5563] dark:text-[#D1D5DB] flex items-center flex-col">
+    <section id="projects" className="pl-8 pt-24 xl:pl-24 font-sans bg-white dark:bg-black text-[#4B5563] dark:text-[#D1D5DB] flex items-center flex-col">
       <h2 className="text-3xl text-center lg:text-5xl font-bold text-black dark:text-white lg:text-start mt-8">
         Projetos
       </h2>
@@ -81,8 +90,8 @@ export default function Projects() {
         <button 
           className={
             webSelect
-              ? "bg-[#27033d] text-black dark:text-white pl-4 pr-4 pt-1 pb-1 rounded-xl text-lg"
-              : "text-white"
+              ? "bg-[#F4CCFB] dark:bg-[#27033d] text-black dark:text-white pl-4 pr-4 pt-1 pb-1 rounded-xl text-lg"
+              : "text-black dark:text-white"
           }
           onClick={() => {
             setWebSelect(true);
@@ -94,8 +103,8 @@ export default function Projects() {
         <button
           className={
             mobileSelect
-              ? "bg-[#27033d] text-black dark:text-white pl-4 pr-4 pt-1 pb-1 rounded-xl text-lg"
-              : "text-white"
+              ? "bg-[#F4CCFB] dark:bg-[#27033d] text-black dark:text-white pl-4 pr-4 pt-1 pb-1 rounded-xl text-lg"
+              : "text-black bg:text-white"
           }
           onClick={() => {
             setWebSelect(false);
@@ -109,23 +118,21 @@ export default function Projects() {
       {webSelect == true ? (
         <div className="flex flex-col gap-12 mt-6 xl:flex-row xl:flex-wrap">
           {webApps.map((project) => (
-            <div className="w-[90%] sm:w-[20%] py-4 bg-[#27033d] flex flex-col rounded-xl px-4">
+            <div className="w-[90%] sm:w-[20%] py-4 bg-[#F4CCFB] dark:bg-[#27033d] flex flex-col rounded-xl px-4">
               <img
                 src={project.image}
                 alt=""
-                className="w-[100%] h-[40%] xl:h-[90%]
-                               "
+                className="w-[100%] h-[40%] xl:h-[90%]       "
               />
-              <h4 className="text-xl font-bold mb-1 mt-2 text-black dark:text-white">{project.title}</h4>
+              <h4 className="text-base font-bold mb-1 mt-2 text-black dark:text-white">{project.title}</h4>
               <p className="mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores exercitationem optio iusto id nulla, eos ullam veniam
+                {project.description}
               </p>
               <div className="flex justify-start gap-6">
                 <a
                   href={project.view}
                   target="_blank"
-                  className="bg-[#BA00EF]  w-24 text-sm py-2 text-center flex items-center justify-center font-medium rounded cursor-pointer"
+                  className="bg-[#BA00EF] text-white dark:text-black w-24 text-sm py-2 text-center flex items-center justify-center font-medium rounded cursor-pointer"
                 >
                   Link
                 </a>

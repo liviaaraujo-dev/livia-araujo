@@ -1,7 +1,7 @@
 
 export default function Contact(){
     return(
-        <div className="flex flex-col justify-center items-center pb-16 bg-white dark:bg-black text-[#4B5563] dark:text-[#D1D5DB]">
+        <div id="contact" className="flex flex-col justify-center items-center pb-16 bg-white dark:bg-black text-[#4B5563] dark:text-[#D1D5DB]">
             <h2 className="text-3xl text-center lg:text-5xl font-bold text-black dark:text-white lg:text-start mt-8">
         Contato
       </h2>

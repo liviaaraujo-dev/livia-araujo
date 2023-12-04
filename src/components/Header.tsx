@@ -53,23 +53,23 @@ export function Header() {
           <nav className={openMenu ? "w-4/5 sm:w-[88%] " : "hidden lg:flex"}>
             <ul className="flex flex-col gap-4 mt-12 items-start font-medium text-xl text-[#4B5563] dark:text-[#D1D5DB] lg:flex-row lg:gap-7 lg:mt-4">
               <li>
-                <a href="">
+                <a href="#home">
                   Home
                 </a>
               </li>
               <li>
-                <a href="" className="text-[#BA00EF]">
+                <a href="#about" className="">
                   About
                 </a>
               </li>
               <li>
-                <a href="">Skils</a>
+                <a href="#skills">Skils</a>
               </li>
               <li>
-                <a href="">Projects</a>
+                <a href="#projects">Projects</a>
               </li>
               <li>
-                <a href="">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </nav>

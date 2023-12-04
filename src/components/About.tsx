@@ -3,7 +3,7 @@ import foto2 from "../assets/imgs/foto12.jpeg";
 
 export function About() {
     return (
-        <section className="flex flex-col justify-center items-center pb-36 bg-white dark:bg-black text-[#4B5563] dark:text-[#D1D5DB]">
+        <section id="about" className="flex flex-col justify-center items-center pb-36 bg-white dark:bg-black text-[#4B5563] dark:text-[#D1D5DB]">
             <h2 className="text-3xl text-center lg:text-5xl font-bold text-black dark:text-white lg:text-start mt-8">Sobre</h2>
             <div className="w-[80%] lg:flex lg:flex-row lg:items-start lg:justify-end lg:mt-8">
 

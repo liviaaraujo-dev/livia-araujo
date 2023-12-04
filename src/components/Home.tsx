@@ -8,8 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export function Home() {
     return (
         <section
-            className="pt-28 lg:pt-40 flex flex-col-reverse items-center justify-center text-lg font-sans bg-white pb-36 dark:bg-black text-[#4B5563] dark:text-[#D1D5DB] lg:flex-row lg:justify-start lg:px-24"
-        >
+            id="home" className=" pt-28 lg:pt-40 flex flex-col-reverse items-center justify-center text-lg font-sans bg-white pb-36 dark:bg-black text-[#4B5563] dark:text-[#D1D5DB] lg:flex-row lg:justify-start lg:px-24">
             <div className='w-4/5 lg:w-2/4'>
                 <h2 className="text-4xl lg:text-6xl font-bold lg:text-start mt-8">
                     Olá, sou
@@ -34,22 +33,20 @@ export function Home() {
                 </div>
 
                 <div className="flex gap-4 mt-12">
-                    <a href="https://github.com/liviaaraujo-dev">
+                    <a href="https://github.com/liviaaraujo-dev" target="_blank">
                         <GitHubIcon style={{ fontSize: 32 }} />
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/liviaaraujodev" target="_blank">
                         <LinkedInIcon style={{ fontSize: 35 }} />
-
                     </a>
-                    <a href="https://instagram.com/liviaaraujo._?igshid=OGQ5ZDc2ODk2ZA==">
+                    <a href="https://instagram.com/liviaaraujo._" target="_blank">
                         <InstagramIcon style={{ fontSize: 35 }} />
-
                     </a>
                 </div>
             </div>
 
             <div className='flex items-center justify-center lg:w-[40%]  lg:ml-20'>
-                <img src={foto1} alt="" className="h-[26rem] lg:h-[36rem]" />
+                <img src={foto1} alt="Foto Lívia Araujo" className="h-[26rem] lg:h-[36rem]" />
             </div>
         </section>
     );
