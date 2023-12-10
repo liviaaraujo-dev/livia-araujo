@@ -12,10 +12,11 @@ export function About() {
                 </div>
 
                 <div className="mt-4 flex flex-col text-lg gap-4 lg:w-[50%] lg:mt-8">
-                    <h3 className="text-xl font-semibold">Curious about me? Here you have it:</h3>
-                    <p>I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
-                    <p>I began my journey as a web developer in 2015, and since then, I've continued rney as a web developer in 2015, and since then, I've continued  to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.</p>
-                    <p>One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉</p>
+                    {/* <h3 className="text-xl font-semibold">Curious about me? Here you have it:</h3> */}
+                    <p>Iniciei meus estudos na área de tecnologia no curso técnico de redes de computadores integrado com ensino médio,  senti uma forte identificação com a área, especialmente na parte de programação; descobri não apenas uma profissão, mas uma paixão. A programação tornou-se mais do que uma habilidade para mim, é uma forma de expressar criatividade, resolver problemas e criar sistemas inovadores.</p>
+                    <p>Então começei me aprofundar na programacao por conta própria, e hoje sou desenvolvedora de software com 1 ano de experiência, já atuei como front-end e mobile.</p>               
+                    <p> Mergulhei de cabeça em desafios que me impulsionaram a aprender e crescer constantemente. A busca por criar sistemas robustos e eficientes tornou-se uma meta constante, impulsionada pelo desejo de contribuir para a construção de soluções que realmente impactem positivamente as pessoas e organizações.</p>
+                    <p>Uma última coisa, estou disponível para trabalho freelancer, então fique à vontade para entrar em contato e dizer olá!</p>
                 </div>
 
             </div>

@@ -1,11 +1,11 @@
 import logo from "../assets/imgs/logo2.png";
+import pdfFile from "../assets/Curriculo.pdf";
 import CloseIcon from "@mui/icons-material/Close";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 
 export function Header() {
-  const pdfFile = "/caminho-para-o-seu-arquivo.pdf";
 
   const [openMenu, setOpenMenu] = useState<Boolean>(false);
 
@@ -59,17 +59,14 @@ export function Header() {
               </li>
               <li>
                 <a href="#about" className="">
-                  About
+                  Sobre
                 </a>
               </li>
               <li>
-                <a href="#skills">Skils</a>
+                <a href="#technologies">Tecnologias</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
+                <a href="#projects">Projetos</a>
               </li>
             </ul>
           </nav>
@@ -82,17 +79,13 @@ export function Header() {
             }
           >
             <hr className="border-5-[#4B5563] w-[100%] mt-8 lg:hidden lg:mt-0" />
-            <button className="flex mt-6 w-4/5 justify-between text-xl sm:w-[88%] lg:w-[20%] lg:mt-2">
-              <p className="text-[#4B5563] dark:text-[#D1D5DB] lg:hidden">Switch Theme</p>
-              <Brightness4Icon style={{ fontSize: 35 }}  className="text-black dark:text-white"/>
-            </button>
 
             <a
               href={pdfFile}
-              download="nome-do-arquivo.pdf"
-              className="bg-[#BA00EF] rounded-md py-2 w-4/5 flex items-center justify-center dark:text-white mt-8 font-medium text-xl sm:w-[88%] lg:w-[10rem] lg:mt-1 lg:h-10 lg:ml-4"
+              download="Currículo Lívia Araujo.pdf"
+              className="bg-[#BA00EF] rounded-md py-2 w-4/5 flex items-center justify-center dark:text-white mt-8 font-medium text-xl sm:w-[88%] lg:w-[16rem] lg:mt-1 lg:h-10 lg:ml-4"
             >
-              Dowland CV
+              Dowland Currículo
             </a>
           </div>
         </div>

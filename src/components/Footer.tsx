@@ -1,4 +1,4 @@
-import logo from "../assets/imgs/logo.png";
+import logo from "../assets/imgs/logo-texto.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -6,9 +6,9 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 export default function Footer() {
   return (
     <footer className="pb-10 bg-[#E5E7EB] dark:bg-[#030712] text-[#4B5563] dark:text-[#D1D5DB]">
-      <div className="flex flex-col md:flex-row md:justify-between md:px-28 md:pt-0">
+      <div className="flex flex-col md:flex-row md:justify-between md:px-8 lg:px-28 md:pt-0">
         <div className="flex items-start cursor-pointer flex-col my-12 ml-4 md:m-0 md:mt-6 lg:ml-0">
-          <img src={logo} width={180} alt="" />
+          <img src={logo} width={230} alt="" />
         </div>
 
         <div className="h-[1px] w-[85%] bg-[#4B5563] dark:bg-white text-center md:hidden ml-8 lg:ml-0"></div>
