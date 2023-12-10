@@ -1,7 +1,6 @@
 import logo from "../assets/imgs/logo2.png";
 import pdfFile from "../assets/Curriculo.pdf";
 import CloseIcon from "@mui/icons-material/Close";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 

@@ -46,7 +46,7 @@ export function Home() {
                     <a href="https://wa.me/558892858695" target="_blank">
                         <WhatsAppIcon style={{ fontSize: 35 }} />
                     </a>
-                </div>
+                </div> 
             </div>
 
             <div className='flex items-center justify-center lg:w-[40%]  lg:ml-20'>
