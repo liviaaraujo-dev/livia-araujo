@@ -9,7 +9,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 export function Home() {
     return (
         <section
-            id="home" className="pt-28 lg:pt-40 flex flex-col-reverse items-center justify-center text-lg font-sans bg-white pb-36 dark:bg-black text-[#4B5563] dark:text-[#D1D5DB] lg:flex-row lg:justify-start lg:px-24">
+            id="home" className="pt-28 md:px-10 lg:pt-40 flex flex-col-reverse items-center justify-center text-lg md:justify-start lg:items-start font-sans bg-white pb-36 dark:bg-black text-[#4B5563] dark:text-[#D1D5DB] lg:flex-row lg:justify-start lg:px-14 xl:px-24">
             <div className='w-4/5 lg:w-2/4'>
                 <h2 className="text-4xl lg:text-6xl font-bold lg:text-start mt-8">
                     Olá, sou

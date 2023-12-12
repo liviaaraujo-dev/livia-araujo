@@ -6,14 +6,22 @@ import { useState } from "react";
 
 export function Header() {
 
-  const [openMenu, setOpenMenu] = useState<Boolean>(false);
+  const [isMenu, setIsMenu] = useState<Boolean>(false);
+
+  function closeMenu(){
+    setIsMenu(false);
+  }
+
+  function openMenu(){
+    setIsMenu(true);
+  }
 
   return (
     <header
       className={
-        openMenu
+        isMenu
           ? "flex flex-col items-center text-base font-sans fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black w-[100%] bg-light-primary lg:flex-row lg:justify-between h-[100vh]"
-          : "flex flex-col items-center text-base font-sans fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black w-[100%] lg:flex-row lg:justify-between lg:px-24"
+          : "flex flex-col items-center text-base font-sans fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black w-[100%] lg:flex-row lg:justify-between lg:px-10 xl:px-20"
       }
     >
       <>
@@ -21,20 +29,20 @@ export function Header() {
           <img src={logo} alt="" className="h-14 lg:mt-4" />
           <button
             className={
-              openMenu ? "text-8xl flex mt-4 lg:hidden" : "hidden lg:hidden"
+              isMenu ? "text-8xl flex mt-4 lg:hidden" : "hidden lg:hidden"
             }
           >
             <CloseIcon
               style={{ fontSize: 30}}
-              onClick={() => setOpenMenu(false)}
+              onClick={closeMenu}
               className="text-black dark:text-white"
             />{" "}
           </button>
           <button
             className={
-              !openMenu ? "text-8xl flex  mt-4 lg:hidden" : "hidden lg:hidden"
+              !isMenu ? "text-8xl flex  mt-4 lg:hidden" : "hidden lg:hidden"
             }
-            onClick={() => setOpenMenu(true)}
+            onClick={openMenu}
           >
             <MenuIcon style={{ fontSize: 30 }}  className="text-black dark:text-white"/>
           </button>
@@ -44,37 +52,37 @@ export function Header() {
 
         <div
           className={
-            openMenu
-              ? "flex flex-col w-[100%] items-center lg:flex-ro lg:justify-center lg:items-center"
+            isMenu
+              ? "flex flex-col w-[100%] items-center lg:flex-row lg:justify-center lg:items-center"
               : "lg:flex lg:flex-row items-center justify-center"
           }
         >
-          <nav className={openMenu ? "w-4/5 sm:w-[88%] " : "hidden lg:flex"}>
+          <nav className={isMenu ? "w-4/5 sm:w-[88%] " : "hidden lg:flex"}>
             <ul className="flex flex-col gap-4 mt-12 items-start font-medium text-xl text-[#4B5563] dark:text-[#D1D5DB] lg:flex-row lg:gap-7 lg:mt-4">
               <li>
-                <a href="#home">
+                <a href="#home" onClick={closeMenu}>
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="">
+                <a href="#about" onClick={closeMenu}>
                   Sobre
                 </a>
               </li>
               <li>
-                <a href="#technologies">Tecnologias</a>
+                <a href="#technologies" onClick={closeMenu}>Tecnologias</a>
               </li>
               <li>
-                <a href="#projects">Projetos</a>
+                <a href="#projects" onClick={closeMenu}>Projetos</a>
               </li>
             </ul>
           </nav>
 
           <div
             className={
-              openMenu
+              isMenu
                 ? "flex flex-col w-[100%] items-center lg:justify-between"
-                : "hidden lg:flex lg:justify-between lg:ml-20 mt"
+                : "hidden lg:flex lg:justify-between lg:ml-6 mt"
             }
           >
             <hr className="border-5-[#4B5563] w-[100%] mt-8 lg:hidden lg:mt-0" />
@@ -82,7 +90,7 @@ export function Header() {
             <a
               href={pdfFile}
               download="Currículo Lívia Araujo.pdf"
-              className="bg-[#BA00EF] rounded-md py-2 w-4/5 flex items-center justify-center dark:text-white mt-8 font-medium text-xl sm:w-[88%] lg:w-[16rem] lg:mt-1 lg:h-10 lg:ml-4"
+              className="bg-[#BA00EF] rounded-md py-2 w-4/5 flex items-center justify-center dark:text-white mt-8 font-medium text-lg sm:w-[88%] lg:w-[14rem] lg:mt-1 lg:h-10 lg:ml-4"
             >
               Dowland Currículo
             </a>

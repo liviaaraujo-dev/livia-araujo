@@ -117,12 +117,12 @@ export function Technologies() {
       <p className="mt-2 mb-6 w-4/5 md:mx-0 text-center lg:mt-4">
         As habilidades, ferramentas e tecnologias em que sou muito bom:
       </p>
-      <div className="grid grid-cols-3 w-4/5 gap-4 mt-4 lg:-w[90%] lg:grid-cols-7 lg:mt-12 xl:w-[65%] lg:gap-8">
+      <div className="grid grid-cols-3 w-4/5 gap-6 mt-4 lg:-w[90%] lg:grid-cols-7 lg:mt-12 xl:w-[65%] lg:gap-8">
         {skills.map((skill) => {
           return (
             <div className="flex flex-col items-center justify-center gap-4">
-              <img src={skill.image} alt={skill.name} />
-              <p>{skill.name}</p>
+              <img src={skill.image} alt={skill.name}/>
+              <p className="text-center">{skill.name}</p>
             </div>
           );
         })}

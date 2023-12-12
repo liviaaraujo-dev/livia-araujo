@@ -148,9 +148,9 @@ export default function Projects() {
       </div>
 
       {webSelect == true ? (
-        <div className="flex flex-col gap-12 mt-6 xl:flex-row xl:flex-wrap justify-center">
+        <div className="flex flex-col gap-12 mt-6 md:flex-row md:flex-wrap justify-center lg:justify-start">
           {webApps.map((project) => (
-            <div className="w-[90%] sm:w-[20%] py-4 bg-[#F4CCFB] dark:bg-[#27033d] flex flex-col rounded-xl px-4">
+            <div className="w-[90%] sm:w-[20%] py-4 bg-[#F4CCFB] dark:bg-[#27033d] flex flex-col rounded-xl px-4 md:w-[40%] lg:w-[20%]">
               <img
                 src={project.image}
                 alt=""
