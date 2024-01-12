@@ -88,13 +88,13 @@ export function Header() {
           >
             <hr className="border-5-[#4B5563] w-[100%] mt-8 lg:hidden lg:mt-0" />
 
-            <a
+            {/* <a
               href={pdfFile}
               download="Currículo Lívia Araujo.pdf"
               className="bg-[#BA00EF] rounded-md py-2 w-4/5 flex items-center justify-center dark:text-white mt-8 font-medium text-lg sm:w-[88%] lg:w-[14rem] lg:mt-1 lg:h-10 lg:ml-4"
             >
               Dowland Currículo
-            </a>
+            </a> */}
           </div>
         </div>
       </>
